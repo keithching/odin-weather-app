@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="weatherDiv">
+            <p id="city"></p>
+            <p id="temp_current"></p>
+            <p id="description"></p>
+            <div id="icon"></div>
+            <p id="temp_max"></p>
+            <p id="temp_min"></p>
+            <o id="humidity"></o>
+        </div>
+        <div class="loading"></div>
+        <form>
+            <input type="text" placeholder="location" id="locationInput" autocomplete="off">
+            <button id="searchButton">Search</button>
+            <ul id="unit">
+                <li id="celsius">°C</li>
+                <li>|</li>
+                <li id="fahranheit">°F</li>
+            </ul>
+            <span id="errorMsg"></span>
+        </form>
+    </div>
+    <div class="footer">
+        <span>Copyright © 2021 <a href="https://github.com/keithching" target="_blank">keithching</a></span>
+    </div>
+</body>
+</html>
